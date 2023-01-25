@@ -1,26 +1,36 @@
-import React from 'react';
+import React from 'react'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import logo from '../components/media/Logofenamac.png'
 import {
-  MDBContainer,
-  MDBNavbar,
   MDBNavbarBrand
-} from 'mdb-react-ui-kit';
+} from 'mdb-react-ui-kit'
 
 export const PrimerComponente = () => {
   return (
     <>
-      <MDBNavbar light bgColor='light'>
-        <MDBContainer fluid>
-          <MDBNavbarBrand href='#'>FENAMAC</MDBNavbarBrand>
-        </MDBContainer>
-      </MDBNavbar>
-
-      <br />
-
-      <MDBNavbar light bgColor='dark'>
-        <MDBContainer fluid>
-          <MDBNavbarBrand tag="span" className='mb-0 h1'>Navbar</MDBNavbarBrand>
-        </MDBContainer>
-      </MDBNavbar>
+      <Navbar variant="dark" style={{ background: "linear-gradient(180deg, rgba(172, 54, 61,1) 35%, rgba(95,52,52,1) 100%)" }}>
+        <Container>
+        <MDBNavbarBrand href='#'>
+          <img
+            src={logo}
+            height= '80px'
+            alt='logo'
+          />
+        </MDBNavbarBrand>
+          <Navbar.Brand href="https://www.fenamacajedrez.com/" 
+                        style={{fontSize: '50px'}}
+          >FENAMAC</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#https://www.fenamacajedrez.com/">PAGINA PRINCIPAL</Nav.Link>
+          </Nav>
+          <Navbar.Text>
+             <a href='#'>nmms xd</a>
+          </Navbar.Text>
+        </Container>
+      </Navbar>
     </>
   );
 }
+

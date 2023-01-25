@@ -1,10 +1,16 @@
 import './App.css';
 import {PrimerComponente} from './components/PrimerComponente';
+import { SegundoComponente } from './components/SegundoComponente';
+
 
 function App() {
   return (
-        <PrimerComponente/>
-  );
+      <div>
+     <PrimerComponente/>
+     <SegundoComponente/>
+      </div>    
+);
+
 }
 
 export default App;
