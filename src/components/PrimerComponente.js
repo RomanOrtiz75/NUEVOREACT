@@ -26,7 +26,7 @@ export const PrimerComponente = () => {
             <Nav.Link href="#https://www.fenamacajedrez.com/">PAGINA PRINCIPAL</Nav.Link>
           </Nav>
           <Navbar.Text>
-             <a href='#'>nmms xd</a>
+             <a href='#'>otro retorno xd</a>
           </Navbar.Text>
         </Container>
       </Navbar>
