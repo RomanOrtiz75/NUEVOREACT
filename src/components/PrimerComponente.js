@@ -6,6 +6,8 @@ import logo from '../components/media/Logofenamac.png'
 import {
   MDBNavbarBrand
 } from 'mdb-react-ui-kit'
+import { Tercercomp } from './Tercercomp';
+import { SegundoComponente } from './SegundoComponente';
 
 export const PrimerComponente = () => {
   return (
@@ -26,10 +28,12 @@ export const PrimerComponente = () => {
             <Nav.Link href="#https://www.fenamacajedrez.com/">PAGINA PRINCIPAL</Nav.Link>
           </Nav>
           <Navbar.Text>
-             <a href='#'>otro retorno xd</a>
+             <a href='#a'>otro retorno xd</a>
           </Navbar.Text>
         </Container>
       </Navbar>
+      <Tercercomp />
+      <SegundoComponente />
     </>
   );
 }

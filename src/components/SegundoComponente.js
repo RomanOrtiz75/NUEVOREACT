@@ -1,5 +1,7 @@
 import React from 'react'
 import png from '../components/media/fenamac PNG.png'
+import { Tarjets } from './docsimg'
+
 export const SegundoComponente = () => {
   return (   
     <div>          
@@ -9,7 +11,7 @@ export const SegundoComponente = () => {
         width: '40%'
       }} />
 
-{/* searchbar */}
+      {/* searchbar */}
 
           <div>
               <form action="/" method="get" style={{
@@ -46,6 +48,9 @@ export const SegundoComponente = () => {
           </button>
           </form>
           </div>
+          <div>
+      </div>
     </div>
+
   )
 }

@@ -1,51 +1,26 @@
 import React from 'react'
-import CardGroup from 'react-bootstrap/CardGroup';
-import Card from 'react-bootstrap/Card';
-import imagendescarga from './media/cards.png';
+import descarga from './media/cards.png';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea} from '@mui/material';
 
 export const Tarjets = () => {
   return (
-    <CardGroup>
-      <Card>
-        <Card.Img variant="top" src={imagendescarga} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src={imagendescarga}/>
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src={imagendescarga} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
+    <Card sx={{ maxWidth: 300 }}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image={descarga}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+          Lista de Rating Estándar FEBRERO 2023
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   )
 }
