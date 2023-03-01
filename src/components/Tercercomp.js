@@ -12,9 +12,9 @@ export const Tercercomp = () => {
                 position: 'absolute',
                 width: '100%',
                 height: '100',
-                opacity: '0.8',
                 backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover'
+                backgroundSize: 'cover',
+                filter: 'brightness(0.4) blur(0.8)',
               }}/>
     </div>
   )

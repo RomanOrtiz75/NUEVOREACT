@@ -8,11 +8,12 @@ import { CardActionArea} from '@mui/material';
 
 export const Tarjets = () => {
   return (
-    <Card sx={{ maxWidth: 300 }}>
+    <div>
+    <Card sx={{ maxWidth: 200 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="70"
           image={descarga}
         />
         <CardContent>
@@ -22,5 +23,38 @@ export const Tarjets = () => {
         </CardContent>
       </CardActionArea>
     </Card>
+          <div>
+              <Card sx={{ maxWidth: 200 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="70"
+                    image={descarga}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                    Lista de Rating Rapido FEBRERO 2023
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+          </div>
+          <div>
+              <Card sx={{ maxWidth: 200 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="70"
+                    image={descarga}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                    Lista de Rating Blitz FEBRERO 2023
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+          </div>
+    </div>
   )
 }

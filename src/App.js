@@ -9,8 +9,13 @@ function App() {
   return (
     <div>
       <PrimerComponente/>
-    <div>
-            <Tarjets/>
+      <Tercercomp />
+      <SegundoComponente />
+    <div style={{
+      position: 'absolute',
+
+    }}>
+      <Tarjets/>
     </div>
     </div>   
 );
