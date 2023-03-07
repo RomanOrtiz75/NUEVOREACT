@@ -10,18 +10,20 @@ import {
 export const PrimerComponente = () => {
   return (
     <>
-      <Navbar variant="dark" style={{ background: "linear-gradient(180deg, rgba(172, 54, 61,1) 35%, rgba(95,52,52,1) 100%)" }}>
+      <Navbar variant="dark" style={{ background: "linear-gradient(0deg, rgba(89,52,59,1) 0%, rgba(174,54,63,1) 100%)",
+      minheight: '84px',
+    }}>
         <Container>
         <MDBNavbarBrand href='#'>
           <img
             src={logo}
-            height= '80px'
+            height= '60px'
             alt='logo'
           />
         </MDBNavbarBrand>
           <Navbar.Brand href="https://www.fenamacajedrez.com/" 
                         style={{
-                          fontSize: '50px',
+                          fontSize: '40px',
                           fontFamily: 'Roboto,sans-serif',
                           fontWeight: 'bold',
                       }}

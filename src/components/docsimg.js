@@ -1,5 +1,5 @@
 import React from 'react'
-import descarga from './media/cards.png';
+import descarga from './media/cards-min.png';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -8,53 +8,86 @@ import { CardActionArea} from '@mui/material';
 
 export const Tarjets = () => {
   return (
-    <div>
-    <Card sx={{ maxWidth: 200 }}>
+<div style={{
+  position: 'relative',
+  display: 'flex',
+  left: '28%',
+  top: '800px',
+}}>
+  
+<a href="https://fenamacajedrez.com/rating/Listados/Lista_Rating_Estandar_MAR_2023.xlsx" style={{textDecoration: 'none'}}> 
+<Card sx={{ maxWidth: 200 ,
+    background: 'transparent',
+    margin: '0 100px 0 100px',
+    }} elevation='0'>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="70"
+          height="150"
           image={descarga}
+          alt="green iguana"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-          Lista de Rating Estándar FEBRERO 2023
-          </Typography>
-        </CardContent>
+      <CardContent style={{
+          fontSize: '20px',
+          textAlign: 'center',
+          alignContent: 'center',
+      }}>
+        <Typography variant="body 2" color="white">
+          Rating Normal Descargar
+        </Typography>
+      </CardContent>  
       </CardActionArea>
     </Card>
-          <div>
-              <Card sx={{ maxWidth: 200 }}>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="70"
-                    image={descarga}
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                    Lista de Rating Rapido FEBRERO 2023
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-          </div>
-          <div>
-              <Card sx={{ maxWidth: 200 }}>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="70"
-                    image={descarga}
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                    Lista de Rating Blitz FEBRERO 2023
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-          </div>
-    </div>
+    </a>
+<a href="https://fenamacajedrez.com/rating/Listados/Lista_Rating_Rapido_MAR_2023.xlsx" style={{textDecoration: 'none'}}>
+    <Card sx={{ maxWidth: 200 ,
+    background: 'transparent',
+    margin: '0 100px 0 100px',
+    }} elevation='0'>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="150"
+          image={descarga}
+          alt="green iguana"
+        />
+      <CardContent style={{
+          fontSize: '20px',
+          textAlign: 'center',
+          alignContent: 'center',
+      }}>
+        <Typography variant="body 2" color="white">
+          Rating Rapido Descargar
+        </Typography>
+      </CardContent>  
+      </CardActionArea>
+    </Card>
+  </a>
+
+  <a href="https://fenamacajedrez.com/rating/Listados/Lista_Rating_Blitz_MAR_2023.xlsx" style={{textDecoration: 'none'}}>
+    <Card sx={{ maxWidth: 200 ,
+    background: 'transparent',
+    margin: '0 100px 0 100px',
+    }} elevation='0'>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="150"
+          image={descarga}
+          alt="green iguana"
+        />
+      <CardContent style={{
+          fontSize: '20px',
+          textAlign: 'center',
+          alignContent: 'center',
+      }}>
+        <Typography variant="body 2" color="white">
+          Rating Blitz Descargar
+        </Typography>
+      </CardContent>  
+      </CardActionArea>
+    </Card>
+    </a>
+</div>
   )
 }

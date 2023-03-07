@@ -14,7 +14,7 @@ export const Tercercomp = () => {
                 height: '100',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
-                filter: 'brightness(0.4) blur(0.8)',
+                filter: 'brightness(0.4)',
               }}/>
     </div>
   )
