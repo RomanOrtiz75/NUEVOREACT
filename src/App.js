@@ -3,6 +3,7 @@ import {PrimerComponente} from './components/PrimerComponente';
 import {SegundoComponente} from './components/SegundoComponente';
 import { Tercercomp } from './components/Tercercomp';
 import { Tarjets } from './components/docsimg';
+import { Menlat } from './components/menlat';
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
 
     }}>
       <Tarjets/>
+    </div>
+    <div>
+
     </div>
     </div>   
 );
