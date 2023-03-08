@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../components/media/Logofenamac.png'
+import { Menlat } from '../components/menlat'
 import {
   MDBNavbarBrand
 } from 'mdb-react-ui-kit';
@@ -36,6 +37,7 @@ export const PrimerComponente = () => {
             >PAGINA PRINCIPAL</Nav.Link>
           </Nav>
         </Container>
+        <Menlat/>
       </Navbar>
     </>
   );

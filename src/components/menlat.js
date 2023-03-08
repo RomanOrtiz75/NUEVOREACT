@@ -1,55 +1,69 @@
+import React from 'react'
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import MailIcon from '@mui/icons-material/Mail';
 
-import React, { useState } from 'react';
-import { Sidebar } from 'primereact/sidebar';
-import { Button } from 'primereact/button';
-
-export default function Menlat() {
-    const [visibleLeft, setVisibleLeft] = useState(false);
-    const [visibleRight, setVisibleRight] = useState(false);
-    const [visibleTop, setVisibleTop] = useState(false);
-    const [visibleBottom, setVisibleBottom] = useState(false);
-
-    return (
-        <div className="card">
-            <div className="flex gap-2 justify-content-center">
-                <Button icon="pi pi-arrow-right" onClick={() => setVisibleRight(true)} />
-                <Button icon="pi pi-arrow-left" onClick={() => setVisibleRight(true)} />
-                <Button icon="pi pi-arrow-down" onClick={() => setVisibleTop(true)} />
-                <Button icon="pi pi-arrow-up" onClick={() => setVisibleBottom(true)} />
-            </div>
-
-            <Sidebar visible={visibleLeft} position="left" onHide={() => setVisibleLeft(false)}>
-                <h2>Left Sidebar</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </Sidebar>
-
-            <Sidebar visible={visibleRight} position="right" onHide={() => setVisibleRight(false)}>
-                <h2>Right Sidebar</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </Sidebar>
-
-            <Sidebar visible={visibleTop} position="top" onHide={() => setVisibleTop(false)}>
-                <h2>Top Sidebar</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </Sidebar>
-
-            <Sidebar visible={visibleBottom} position="bottom" onHide={() => setVisibleBottom(false)}>
-                <h2>Bottom Sidebar</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </Sidebar>
+export const Menlat = () => {
+    const [state, setState] = React.useState({
+        top: false,
+        left: false,
+        bottom: false,
+        right: false,
+      });
+    
+      const toggleDrawer = (anchor, open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+          return;
+        }
+    
+        setState({ ...state, [anchor]: open });
+      };
+    
+      const list = (anchor) => (
+        <Box
+          sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+          role="presentation"
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+        >
+          <List>
+            {['Inicio', 'Documentos', 'Lineamientos', 'Registros','Calendario','Comisiones','Circulares','Protocolos de Seguridad','Afilicianes','Torneos','Asociasiones','Nacional Abierto Mexicano','Centros de Desarrollo'].map((text, index) => (
+              <ListItem key={text} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>
+                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  </ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+          <Divider/>
+        </Box>
+      );
+    
+      return (
+        <div>
+          {['Menu Lateral'].map((anchor) => (
+            <React.Fragment key={anchor}>
+              <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+              <Drawer
+                anchor={anchor}
+                open={state[anchor]}
+                onClose={toggleDrawer(anchor, false)}
+              >
+                {list(anchor)}
+              </Drawer>
+            </React.Fragment>
+          ))}
         </div>
-    )
+      )
 }
-         
