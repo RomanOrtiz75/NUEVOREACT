@@ -8,8 +8,11 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
+import MenuIcon from '@mui/icons-material/Menu';
+import ArticleIcon from '@mui/icons-material/Article';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 
 export const Menlat = () => {
     const [state, setState] = React.useState({
@@ -18,6 +21,56 @@ export const Menlat = () => {
         bottom: false,
         right: false,
       });
+
+const iconmenu = [
+        {
+          nombre: 'iconmenu',
+          icon: <MenuIcon/>,
+        },
+
+      ]     
+    const menulateral = [
+      {
+        nombre: 'Inicio',
+        icon: <HomeIcon/>,
+      },
+      {
+        nombre: 'Documentos',
+        icon: <ArticleIcon/>,
+      },
+      {
+        nombre: 'Lineamientos',
+        icon: <ArticleIcon/>,
+      },
+      {
+        nombre: 'Registros',
+        icon: <ArticleIcon/>,
+      },
+      {
+        nombre: 'Calendario FENAMAC',
+        icon: <CalendarMonthIcon/>,
+      },
+      {
+        nombre: 'Comisiones',
+        icon: <ArticleIcon/>,
+      },
+      {
+        nombre: 'Circulares',
+        icon: <ArticleIcon/>,
+      },
+      {
+        nombre: 'Protocolos de seguridad',
+        icon: <ArticleIcon/>,
+      },
+      {
+        nombre: 'Afiliaciones',
+        icon: <ArticleIcon/>,
+      },
+      {
+        nombre: 'Torneos',
+        icon: <EmojiEventsIcon/>,
+      },
+    ] 
     
       const toggleDrawer = (anchor, open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -35,13 +88,13 @@ export const Menlat = () => {
           onKeyDown={toggleDrawer(anchor, false)}
         >
           <List>
-            {['Inicio', 'Documentos', 'Lineamientos', 'Registros','Calendario','Comisiones','Circulares','Protocolos de Seguridad','Afilicianes','Torneos','Asociasiones','Nacional Abierto Mexicano','Centros de Desarrollo'].map((text, index) => (
-              <ListItem key={text} disablePadding>
+            {menulateral.map((item, index) => (
+              <ListItem key={index} disablePadding>
                 <ListItemButton>
                   <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                    {item.icon}
                   </ListItemIcon>
-                  <ListItemText primary={text} />
+                  <ListItemText primary={item.nombre} />
                 </ListItemButton>
               </ListItem>
             ))}
@@ -52,15 +105,18 @@ export const Menlat = () => {
     
       return (
         <div>
-          {['Menu Lateral'].map((anchor) => (
-            <React.Fragment key={anchor}>
-              <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          {iconmenu.map((item, index) => (
+            <React.Fragment key={item.nombre}>
+              <Button style={{
+                color: 'white',
+                fontSize: '20px'
+              }} onClick={toggleDrawer(item.nombre, true)}>{item.icon}</Button>
               <Drawer
-                anchor={anchor}
-                open={state[anchor]}
-                onClose={toggleDrawer(anchor, false)}
+                anchor={item.nombre}
+                open={state[item.nombre]}
+                onClose={toggleDrawer(item.nombre, false)}
               >
-                {list(anchor)}
+                {list(item.nombre)}
               </Drawer>
             </React.Fragment>
           ))}
