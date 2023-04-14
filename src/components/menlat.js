@@ -33,43 +33,54 @@ const iconmenu = [
       {
         nombre: 'Inicio',
         icon: <HomeIcon/>,
+        ruta:  'https://www.fenamacajedrez.com',
       },
       {
         nombre: 'Documentos',
         icon: <ArticleIcon/>,
+        ruta:  'https://www.fenamacajedrez.com/files/U.V.U.V.ok.delReglamentodeportivodelaFENAMACoK.U.V.U.V...Ultimaversion.pdf',
       },
       {
         nombre: 'Lineamientos',
         icon: <ArticleIcon/>,
+        ruta:  'https://www.fenamacajedrez.com/files/U.V.U.V.ok.delReglamentodeportivodelaFENAMACoK.U.V.U.V...Ultimaversion.pdf',
       },
       {
         nombre: 'Registros',
         icon: <ArticleIcon/>,
+        ruta:  'https://fenamacajedrez.com/registro-de-torneos/',
       },
       {
         nombre: 'Calendario FENAMAC',
         icon: <CalendarMonthIcon/>,
+        ruta:  '/',
       },
       {
         nombre: 'Comisiones',
         icon: <ArticleIcon/>,
+        ruta:  'https://www.fenamacajedrez.com/files/RegistroyReportdeTorneosFIDE-FENAMAC1.pdf',
       },
       {
         nombre: 'Circulares',
         icon: <ArticleIcon/>,
+        ruta:  '/',
       },
       {
         nombre: 'Protocolos de seguridad',
         icon: <ArticleIcon/>,
+        ruta:  'https://fenamacajedrez.com/wp-content/uploads/2021/07/Chess-Care.pdf',
       },
       {
         nombre: 'Afiliaciones',
         icon: <ArticleIcon/>,
+        ruta:  'https://afiliaciones.fenamacajedrez.com',
       },
       {
         nombre: 'Torneos',
         icon: <EmojiEventsIcon/>,
+        ruta:  'https://iberoamericano.fenamacajedrez.com',
       },
+  
     ] 
     
       const toggleDrawer = (anchor, open) => (event) => {
@@ -90,7 +101,7 @@ const iconmenu = [
           <List>
             {menulateral.map((item, index) => (
               <ListItem key={index} disablePadding>
-                <ListItemButton>
+                <ListItemButton onClick={() => window.location.href = item.ruta}> 
                   <ListItemIcon>
                     {item.icon}
                   </ListItemIcon>

@@ -55,14 +55,12 @@ function Buscador() {
   fontsize: '20px',
 
       }}>Buscar</button>
-      <ul style={{
-        textColor:'white'
-      }}>
+      <ul>
         <>
         { (filtro.length > 0)&&
             <>
             {filtro.map((resultado) => (
-                <li key={resultado.id}>{resultado.name}</li>
+                <li key={resultado.id}  style={{ color: 'white' }}>{resultado.name}</li>
               ))}
             </>
         }
