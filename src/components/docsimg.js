@@ -12,7 +12,7 @@ export const Tarjets = () => {
   position: 'relative',
   display: 'flex',
   left: '13%',
-  top: '750px',
+  top: '1250px',
 }}>
   
 <a href="https://fenamacajedrez.com/rating/Listados/Lista_Rating_Estandar_MAR_2023.xlsx" style={{textDecoration: 'none'}}> 

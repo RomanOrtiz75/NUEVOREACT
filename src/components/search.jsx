@@ -7,7 +7,7 @@ function Buscador() {
 
   useEffect(() => {
     async function buscar() {
-      const respuesta = await fetch(`https://jsonplaceholder.typicode.com/users/`);
+      const respuesta = await fetch(`data.json`);
       const datos = await respuesta.json();
       setResultados(datos);
       console.log(datos);
@@ -18,7 +18,7 @@ function Buscador() {
 
   function handleChange(evento) {
     let datos = resultados.filter((usuario) => {
-      return usuario.name.toLowerCase().includes(evento.target.value.toLowerCase());  
+      return usuario.Name.toLowerCase().includes(evento.target.value.toLowerCase());  
     })
     setFiltro(datos);
     setBusqueda(evento.target.value);
@@ -34,7 +34,7 @@ function Buscador() {
       right: '27%',
       top: '70%'}} onSubmit={handleSubmit}>
       <input type="text" value={busqueda} onChange={handleChange} id="header-search"
-                    placeholder="BUSCAR POR NOMBRE,APELLIDO,NO. DE RATING ETC."
+                    placeholder="BUSCAR POR NOMBRE Y APELLIDO."
                     name="s"
                     style={{
                       width: '500px',
@@ -55,12 +55,26 @@ function Buscador() {
   fontsize: '20px',
 
       }}>Buscar</button>
-      <ul>
+      <ul style={{
+          margin: '20px 0',
+          padding: '10px',
+          fontWeight: 'bold',
+      }}>
         <>
         { (filtro.length > 0)&&
             <>
             {filtro.map((resultado) => (
-                <li key={resultado.id}  style={{ color: 'white' }}>{resultado.name}</li>
+                <li key={resultado.id}  style={{
+                  marginbottom: '10px',
+                  padding: '5px',
+                  borderbottom: '1px solid white',
+                  color: 'white',
+                  textalign: 'left',
+                 }}>
+                  Id: {resultado.id}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+                  Nombre: {resultado.Name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                  Rating: {resultado.Rtg_Nat}
+                </li>
               ))}
             </>
         }

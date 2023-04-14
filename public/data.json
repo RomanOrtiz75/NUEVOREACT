@@ -1,0 +1,182 @@
+[
+  {
+  "id":"1",
+  "Name": "Abac Mendez Ignacio Fabian",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "CDM",
+  "Rtg_Nat": "1340",
+  "K": "40"
+},
+{
+  "id": "2",
+  "Name": "Abad Moreno Diana Itzel",
+  "Sex": "f",
+  "Fed": "MEX",
+  "ClubName": "MCH",
+  "Rtg_Nat": "1000",
+  "K": "40"
+},
+{
+  "id":"3",
+  "Name": "Abad Vazquez Israel",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "GTO",
+  "Rtg_Nat": "1000",
+  "K": "40"
+},
+{
+  "id":"4",
+  "Name": "Abadia Castaneda Brando Ma",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "CHS",
+  "Rtg_Nat": "1042",
+  "K": "40"
+},
+{
+  "id":"5",
+  "Name": "Abadia Salvador Juan Carlo",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "CHS",
+  "Rtg_Nat": "1011",
+  "K": "40"
+},
+{
+  "id":"6",
+  "Name": "Abadia Vera Sergio Jordy",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "CHS",
+  "Rtg_Nat": "1303",
+  "K": "40"
+},
+{
+  "id":"7",
+  "Name": "Abarca Catalan Andres",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "UNM",
+  "Rtg_Nat": "1615",
+  "K": "40"
+},
+{
+  "id": "8",
+  "Name": "Abarca Catalan Lorenzo",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "CDM",
+  "Rtg_Nat": "1495",
+  "K": "40"
+},
+{
+  "id": "9",
+  "Name": "Abarca Galeana Angel Gabriel",
+  "Sex": " ",
+  "Fed": "MEX",
+  "Rtg_Nat": "1000",
+  "K": "40"
+},
+{
+  "id": "10",
+  "Name": "Abarca Garcia Luciano",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "SLP",
+  "Birthday": "22/03/2004",
+  "Rtg_Nat": "1075",
+  "K": "40"
+},
+{
+  "id":"11",
+  "Name": "Abarca Gaytan Ruben",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "GRO",
+  "Rtg_Nat": "1000",
+  "K": "40"
+},
+{
+  "id":"12",
+  "Name": "Abarca Gonzalez Sergio",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "CHS",
+  "Rtg_Nat": "1192",
+  "K": "40"
+},
+{
+  "id": "13",
+  "Name": "Abarca Jose",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "CHH",
+  "Rtg_Nat": "1879",
+  "K": "40"
+},
+{
+  "id": "14",
+  "Name": "Abarca Lara Pablo",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "GRO",
+  "Rtg_Nat": "1000",
+  "K": "40"
+},
+{
+  "id":"15",
+  "Name": "Abarca Mazariegos Ana Karen",
+  "Sex": "f",
+  "Fed": "MEX",
+  "ClubName": "CHS",
+  "Rtg_Nat": "1000",
+  "K": "40"
+},
+{
+  "id":"16",
+  "Name": "Abarca Peralta Jacqueline",
+  "Sex": "f",
+  "Fed": "MEX",
+  "ClubName": "GRO",
+  "Rtg_Nat": "1000",
+  "K": "40"
+},
+{
+  "id": "17",
+  "Name": "Abarca Pozos Adrian",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "SON",
+  "Rtg_Nat": "1012",
+  "K": "40"
+},
+{
+  "id":"18",
+  "Name": "Abarca Pozos Andres",
+  "Sex": " ",
+  "Fed": "MEX",
+  "ClubName": "SON",
+  "Rtg_Nat": "1064",
+  "K": "40"
+},
+{
+  "id": "19",
+  "Name": "Abarca Ramirez Maria Lucer",
+  "Sex": "f",
+  "Fed": "MEX",
+  "ClubName": "GRO",
+  "Rtg_Nat": "1000",
+  "K": "40"
+},
+{
+  "id":"20",
+  "Name": "Abascal Oropesa Ramon Julian",
+  "Fed": "MEX",
+  "ClubName": "VER",
+  "Birthday": "08/03/2006",
+  "Rtg_Nat": "1228",
+  "K": "40"
+}
+]
