@@ -14,6 +14,7 @@ export const PrimerComponente = () => {
       <Navbar variant="dark" style={{ background: "linear-gradient(0deg, rgba(89,52,59,1) 0%, rgba(174,54,63,1) 100%)",
       minheight: '84px',
     }}>
+        <Menlat/>
         <Container>
         <MDBNavbarBrand href='#'>
           <img
@@ -37,7 +38,6 @@ export const PrimerComponente = () => {
             >PAGINA PRINCIPAL</Nav.Link>
           </Nav>
         </Container>
-        <Menlat/>
       </Navbar>
     </>
   );
