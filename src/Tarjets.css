@@ -1,0 +1,21 @@
+.tarjet-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1000px;
+    top: 1000px;
+  }
+  
+  .tarjet-container a {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .tarjet-container a {
+      flex-basis: 10%;
+    }
+  }
+  

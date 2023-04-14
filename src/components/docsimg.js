@@ -11,8 +11,8 @@ export const Tarjets = () => {
 <div style={{
   position: 'relative',
   display: 'flex',
-  left: '28%',
-  top: '800px',
+  left: '13%',
+  top: '1000px',
 }}>
   
 <a href="https://fenamacajedrez.com/rating/Listados/Lista_Rating_Estandar_MAR_2023.xlsx" style={{textDecoration: 'none'}}> 
@@ -32,7 +32,7 @@ export const Tarjets = () => {
           textAlign: 'center',
           alignContent: 'center',
       }}>
-        <Typography variant="body 2" color="white">
+        <Typography variant="body 2" color="black">
           Rating Normal Descargar
         </Typography>
       </CardContent>  
@@ -56,7 +56,7 @@ export const Tarjets = () => {
           textAlign: 'center',
           alignContent: 'center',
       }}>
-        <Typography variant="body 2" color="white">
+        <Typography variant="body 2" color="black">
           Rating Rapido Descargar
         </Typography>
       </CardContent>  
@@ -81,7 +81,7 @@ export const Tarjets = () => {
           textAlign: 'center',
           alignContent: 'center',
       }}>
-        <Typography variant="body 2" color="white">
+        <Typography variant="body 2" color="black">
           Rating Blitz Descargar
         </Typography>
       </CardContent>  
