@@ -11,7 +11,7 @@ export const Tercercomp = () => {
         style={{
           position: 'absolute',
           width: '100%',
-          height: '100%',
+          height: '150%',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           filter: 'brightness(0.4)',

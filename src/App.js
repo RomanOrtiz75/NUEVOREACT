@@ -9,10 +9,11 @@ import Buscador from './components/search';
 function App() {
   return (
     <div>
-      <Buscador/>
       <PrimerComponente/>
       <Tercercomp />
       <SegundoComponente />
+      <Buscador/>
+
     <div style={{
       position: 'absolute',
 

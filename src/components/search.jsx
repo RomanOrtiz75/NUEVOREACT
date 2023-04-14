@@ -29,10 +29,35 @@ function Buscador() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" value={busqueda} onChange={handleChange} />
-      <button type="submit">Buscar</button>
-      <ul>
+    <form style={{
+      position: 'absolute',
+      right: '27%',
+      top: '70%'}} onSubmit={handleSubmit}>
+      <input type="text" value={busqueda} onChange={handleChange} id="header-search"
+                    placeholder="BUSCAR POR NOMBRE,APELLIDO,NO. DE RATING ETC."
+                    name="s"
+                    style={{
+                      width: '500px',
+                      borderright: 'none',
+                      padding: '5px',
+                      height: '40px',
+                      outline: 'none',
+                      margin: '0 50px 0 0',
+                    }}/>
+      <button type="submit" style={{
+  width: '100px',
+  height: '40px',
+  background: 'rgba(172, 54, 61,1)',
+  textalign: 'center',
+  color: '#fff',
+  border: 'solid 1px rgba(172, 54, 61,1)',
+  cursor: 'pointer',
+  fontsize: '20px',
+
+      }}>Buscar</button>
+      <ul style={{
+        textColor:'white'
+      }}>
         <>
         { (filtro.length > 0)&&
             <>
